@@ -4,6 +4,8 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 100%;
+    box-sizing: content-box;
+
 }
 
 .logo{
@@ -15,7 +17,8 @@
 main{
     display: flex;
     margin-bottom: 50px;
-    margin-left: 80px;
+    margin-left: 120px;
+    gap: 5%;
 }
 
 .text-area{
@@ -29,20 +32,9 @@ main{
     outline: none;
 }
 
-.mensaje{
-    background: white;
-    background-image: url("Muñeco.png");
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 24px;
-    color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
-}
-.mensaje:focus {
-    outline: none;
+.informacion {
+    color: #495057;
+    font-size: 18px;
 }
 
 .botones{
@@ -71,19 +63,95 @@ main{
     width: 320px;
 }
 
+.mensaje{
+    background: white;
+    background-image: url("Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 60px;
+    /* margin-top: 20px; */
+    /* padding-left: 20px; */
+    /* position: fixed; */
+    position: absolute;
+    width: 330px;
+    padding: 5px 5px 5px 5px;
+}
+.mensaje:focus {
+    outline: none;
+}
 .copiar {
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
     height: 50px;
-    margin-left: 108px;
-    margin-top: 402px;
-    position: absolute;
+    margin-left: 60px;
+    margin-top: 480px;
+    /* position: absolute; */
     width: 320px;
 }
 
-.informacion {
-    color: #495057;
-    font-size: 18px;
+
+.credito {
+    width: auto;
+    height: 5%;
+    /* color: var(--color-secundario); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+@media (max-width: 1200px) {
+    body {
+        height: auto;
+        /* gap: 15px; */
+    }
+    main {
+        width: 95%;
+        height: 400%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        /* gap: 50%; */
+    }
+
+    .text-area{
+        border: none;
+        /* color: #0a3871; */
+        margin-top: 10px;
+        width: 100%;
+        /* text-transform: lowercase; */
+        cols
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0; */
+        gap: 10px;
+    }
+    .mensaje{
+        background: white;
+        background-image: "none";
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 24px;
+        color: #0A3871;
+        margin-left: 0px;
+        margin-top: 20px;
+        /* padding-left: 20px; */
+        /* position: fixed; */
+        position: absolute;
+        width: 80%;
+        /* padding: 5px 5px 5px 5px; */
+    }
 }
